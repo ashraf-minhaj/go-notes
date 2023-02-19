@@ -1,8 +1,15 @@
 # go-notes
 
-## Chapters
+<div align="center">
+![img](https://www.freecodecamp.org/news/content/images/2022/03/dancing-gopher.gif)
+
+ I'm learning golang from the book Head First Go. Let's see with how many days I get to finish this off.
+ </div>
+
+## Chapters [2/16]
  * Chapter 1. let’s get going: Syntax Basics [10001-10011]
- * Chapter 2. which code runs next?: Conditionals and Loops [20001-]
+ * Chapter 2. which code runs next?: Conditionals and Loops [20001-20008]
+ * Chapter 3. call me: Functions []
 
 
 ## To run (basic)
@@ -48,6 +55,7 @@ conventions -
 # Block vs Variable scope
  * blocks - segments of codes
  * scope - A variable’s scope consists of the block it’s declared in and any blocks nested within that block.
+ * Just like with conditionals, the scope of any variables declared within a loop’s block is limited to that block (the init statement, condition expression, and post statement can be considered part of that scope too).
 
 ## Build Go apps
  * compile the source code intor binary file - `go build file_name`
@@ -61,6 +69,9 @@ conventions -
  out1, err := something.SometingElse() // both vars declared
  out2, err := something.MoreSomething() // out2 declared, err assigned
  ```
+ * Functions, conditionals, and loops all have blocks of code that appear within {} braces.
+ * In addition to a name, a package may have an import path that is required when it is imported. i.e. `math/rand`
+ * 
 
 
 
