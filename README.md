@@ -1,14 +1,14 @@
 # go-notes
 
-<div align="center">
+<!-- <div align="center"> -->
 ![img](https://www.freecodecamp.org/news/content/images/2022/03/dancing-gopher.gif)
 
- I'm learning golang from the book Head First Go. Let's see with how many days I get to finish this off.
- </div>
+I'm learning golang from the book Head First Go. Let's see with how many days I get to finish this off.
+ <!-- </div> -->
 
 ## Chapters [2/16]
  * Chapter 1. let’s get going: Syntax Basics [10001-10011]
- * Chapter 2. which code runs next?: Conditionals and Loops [20001-20008]
+ * Chapter 2. which code runs next?: Conditionals and Loops [20000-20008]
  * Chapter 3. call me: Functions []
 
 
@@ -71,7 +71,7 @@ conventions -
  ```
  * Functions, conditionals, and loops all have blocks of code that appear within {} braces.
  * In addition to a name, a package may have an import path that is required when it is imported. i.e. `math/rand`
- * 
+ * Man user input taking sucks!
 
 
 
