@@ -9,11 +9,12 @@ I'm learning golang from the book Head First Go. Let's see with how many days I 
 ## Chapters [2/16]
  * Chapter 1. let’s get going: Syntax Basics [10001-10011]
  * Chapter 2. which code runs next?: Conditionals and Loops [20000-20008]
- * Chapter 3. call me: Functions []
+ * Chapter 3. call me: Functions [30001-cont.]
 
 
 ## To run (basic)
  * Init - `go mod init program_name`
+ * Add module requirements and sums - `go mod tidy`
  * Format it - `go fmt`. Why? Because other devs want you to deliver standard code.
  * Run  - `go run .`
 
@@ -72,6 +73,7 @@ conventions -
  * Functions, conditionals, and loops all have blocks of code that appear within {} braces.
  * In addition to a name, a package may have an import path that is required when it is imported. i.e. `math/rand`
  * Man user input taking sucks!
+ * Go is a “pass-by-value” language; function parameters receive a copy of the arguments from the function call.
 
 
 
