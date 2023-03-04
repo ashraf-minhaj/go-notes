@@ -58,6 +58,14 @@ conventions -
  * scope - A variable’s scope consists of the block it’s declared in and any blocks nested within that block.
  * Just like with conditionals, the scope of any variables declared within a loop’s block is limited to that block (the init statement, condition expression, and post statement can be considered part of that scope too).
 
+# Pointers
+ * Values that represent the address of a variable are known as pointers, because **they point to the location where the variable can be found**.
+ * type of a pointer is written with a * symbol, followed by the type of the variable the pointer points to.
+ * The type of a pointer to an int variable.
+ * *int (read as - pointer to int)
+ * The * operator can also be used to update the value at a pointer.
+
+
 ## Build Go apps
  * compile the source code intor binary file - `go build file_name`
  * run the exe on windows, or just file name on mac/linux. `./file_name`
@@ -74,6 +82,10 @@ conventions -
  * In addition to a name, a package may have an import path that is required when it is imported. i.e. `math/rand`
  * Man user input taking sucks!
  * Go is a “pass-by-value” language; function parameters receive a copy of the arguments from the function call.
+ * error strings should not end with punctuation or newlines, or should not be capitalized.
+ * & - ampersand
+ * You can get the address of a variable using & (an ampersand), which is Go’s “address of” operator
+ * 
 
 
 

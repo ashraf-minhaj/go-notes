@@ -13,7 +13,7 @@ import (
 func multiply(num1 int, num2 int) (int, error) {
 	/* handle error, and return using a function */
 	if num1 < 0 || num2 < 0 {
-		return 0, fmt.Errorf("The value can not be negative, why? My boss does not like 'em.")
+		return 0, fmt.Errorf("the value can not be negative, reason My boss does not like them")
 	}
 	result := num1 * num2
 	return result, nil
