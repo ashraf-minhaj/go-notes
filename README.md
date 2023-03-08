@@ -3,13 +3,14 @@
 <!-- <div align="center"> -->
 ![img](https://www.freecodecamp.org/news/content/images/2022/03/dancing-gopher.gif)
 
-I'm learning golang from the book Head First Go. Let's see with how many days I get to finish this off.
+I'm learning golang from the book Head First Go. Let's see in how many days I get to finish this off.
  <!-- </div> -->
 
-## Chapters [2/16]
+## Chapters [4/16]
  * Chapter 1. let’s get going: Syntax Basics [10001-10011]
  * Chapter 2. which code runs next?: Conditionals and Loops [20000-20008]
- * Chapter 3. call me: Functions [30001-cont.]
+ * Chapter 3. call me: Functions, Pointers [30001-30005]
+ * Chapter 4. bundles of code: Packages [40001-cont.]
 
 
 ## To run (basic)
@@ -64,6 +65,7 @@ conventions -
  * The type of a pointer to an int variable.
  * *int (read as - pointer to int)
  * The * operator can also be used to update the value at a pointer.
+ * In Go, it’s okay to return a pointer to a variable that’s local to a function. Even if that variable is no longer in scope, as long as you still have the pointer, Go will ensure you can still access the value.
 
 
 ## Build Go apps
@@ -85,7 +87,7 @@ conventions -
  * error strings should not end with punctuation or newlines, or should not be capitalized.
  * & - ampersand
  * You can get the address of a variable using & (an ampersand), which is Go’s “address of” operator
- * 
+ * **Go is a pass-by-value language**, meaning that function parameters receive a copy of any arguments from the caller
 
 
 

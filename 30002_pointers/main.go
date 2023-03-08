@@ -47,4 +47,15 @@ func main() {
 	fmt.Println(*pointerToOrange) // print pointer value
 	fmt.Println(*pointer)         // get pointer value
 
+	// change variable and pointers too
+	fmt.Println("Change vars and pointers")
+	myInt := 4
+	fmt.Println("myint value:", myInt)
+	fmt.Println("myint pointer:", &myInt)
+
+	myPointer := &myInt
+	*myPointer = 8
+	fmt.Println("myint", myInt)
+	fmt.Println("pointer value", *myPointer)
+	fmt.Println("mypointer pointer:", myPointer)
 }
