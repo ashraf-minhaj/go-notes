@@ -10,7 +10,8 @@ I'm learning golang from the book Head First Go. Let's see in how many days I ge
  * Chapter 1. let’s get going: Syntax Basics [10001-10011]
  * Chapter 2. which code runs next?: Conditionals and Loops [20000-20008]
  * Chapter 3. call me: Functions, Pointers [30001-30005]
- * Chapter 4. bundles of code: Packages [40001-cont.]
+ * Chapter 4. bundles of code: Packages []
+ * Chapter 5. on the list: Arrays [50001-]
 
 
 ## To run (basic)
@@ -54,12 +55,12 @@ conventions -
   now.Year()        // now value/object, Year() is method
   ```
 
-# Block vs Variable scope
+## Block vs Variable scope
  * blocks - segments of codes
  * scope - A variable’s scope consists of the block it’s declared in and any blocks nested within that block.
  * Just like with conditionals, the scope of any variables declared within a loop’s block is limited to that block (the init statement, condition expression, and post statement can be considered part of that scope too).
 
-# Pointers
+## Pointers
  * Values that represent the address of a variable are known as pointers, because **they point to the location where the variable can be found**.
  * type of a pointer is written with a * symbol, followed by the type of the variable the pointer points to.
  * The type of a pointer to an int variable.
@@ -67,6 +68,13 @@ conventions -
  * The * operator can also be used to update the value at a pointer.
  * In Go, it’s okay to return a pointer to a variable that’s local to a function. Even if that variable is no longer in scope, as long as you still have the pointer, Go will ensure you can still access the value.
 
+## Arrays
+ * Arrays hold collection of values that all share the same type.
+ * Example - pill box.
+ * **An array holds a specific number of elements, and it cannot grow or shrink.**
+ * `var myArray [n]string`
+ * If you know in advance what values an array should hold, you can initialize the array with those values using an array literal.
+ * 
 
 ## Build Go apps
  * compile the source code intor binary file - `go build file_name`
@@ -88,6 +96,7 @@ conventions -
  * & - ampersand
  * You can get the address of a variable using & (an ampersand), which is Go’s “address of” operator
  * **Go is a pass-by-value language**, meaning that function parameters receive a copy of any arguments from the caller
+ * **PANIC** - an error that occurs while your program is running (not while compiling)
 
 
 
