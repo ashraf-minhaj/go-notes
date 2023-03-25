@@ -11,7 +11,8 @@ I'm learning golang from the book Head First Go. Let's see in how many days I ge
  * Chapter 2. which code runs next?: Conditionals and Loops [20000-20008]
  * Chapter 3. call me: Functions, Pointers [30001-30005]
  * Chapter 4. bundles of code: Packages []
- * Chapter 5. on the list: Arrays [50001-]
+ * Chapter 5. on the list: Arrays [50001-50006]
+ * Chapter 6. appending issue: Slices [60001-]
 
 
 ## To run (basic)
@@ -25,6 +26,12 @@ I'm learning golang from the book Head First Go. Let's see in how many days I ge
  * RUNES - 'x' (int8, int32)
  * BOOL - true/false
  * NUMBER - integer (int), float (float32, float64)
+
+## Data Structures
+ * Array `var numbers [10]int`, `numbers := [3]float64{}`, `numbers := [3]float64{1, 2, 3}`
+ * Slice `var mySlice []string`, `myslice := []string`
+ * Map
+ * Struct
 
 ## zero values
  declare vars without assigning anything in it.
@@ -73,15 +80,23 @@ conventions -
  * Example - pill box.
  * **An array holds a specific number of elements, and it cannot grow or shrink.**
  * `var myArray [n]string`
- * If you know in advance what values an array should hold, you can initialize the array with those values using an array literal.
- * 
+ * If you know in advance what values an array should hold, you can initialize the array with those values using an **array literal** `[3]int{4, 9, 6}`.
+
+## Slices
+ * Slices are a collection type that can grow to hold additional items
+
+## OS
+ * os.Open function opens a file
+ * os.File value to bufio.NewScanner returns a bufio.Scanner value whose Scan and Text methods can be used to read a line at a time from the file as strings.
 
 ## Build Go apps
  * compile the source code intor binary file - `go build file_name`
  * run the exe on windows, or just file name on mac/linux. `./file_name`
+ * traverse -  for...range loop syntax.
 
 ## Notes:
  * go is a statically typed language. If you type wrong type of value in the wrong place, go will let you know.
+ * In Go, := is for declaration + assignment.
  * blank identifier - single underscore if you are not using a variable `_`
  * declare two variables -> latest one will be assignment. 
  ```
