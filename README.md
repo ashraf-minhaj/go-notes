@@ -29,7 +29,7 @@ I'm learning golang from the book Head First Go. Let's see in how many days I ge
 
 ## Data Structures
  * Array `var numbers [10]int`, `numbers := [3]float64{}`, `numbers := [3]float64{1, 2, 3}`
- * Slice `var mySlice []string`, `myslice := []string`
+ * Slice `var mySlice []string`
  * Map
  * Struct
 
